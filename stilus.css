@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(kepek/hatter.jpg);
+}
+main{
+    background-color: #bf9276;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "h h"
+    "n n"
+    "gr gr"
+    "f f";
+    gap: 20px;
+}
+header{
+    grid-area: h;
+    /* border: 1px solid #b6d3ab; */
+    background-color: #ddead8;
+    text-align: center;
+    border-radius: 8px;
+}
+footer{
+    grid-area: f;
+    background-color: #ddead8;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+}
+#grid-container{
+    grid-area: gr;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+.card{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    background-color: #f7f0e5;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 350px;
+}
+.card img{
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    max-height: 200px;
+    max-width: 100%;
+    object-fit: cover;
+}
+.card h3{
+    grid-row: 2;
+    justify-self: center;
+    align-self: end;
+    margin-top: 15px;
+    font-family: sans-serif;
+}
+.card-link{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.card-link:hover .card{
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}

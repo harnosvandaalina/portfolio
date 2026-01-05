@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(kepek/hatter.jpg);
+    background-size: cover;
+}
+main{
+    background-color: #bf9276;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    "h h"
+    "n n"
+    "as ar"
+    "mc mc"
+    "f f";
+    gap: 20px;
+}
+header{
+    grid-area: h;
+    text-align: center;
+    background-color: #ddead8;
+    border-radius: 8px;
+}
+nav{
+    grid-area: n;
+    background-color: #f7f0e5;
+    border-radius: 8px;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+    text-decoration: none;
+}
+nav li{
+    text-align: center;
+}
+nav li a{
+    color: black;
+}
+aside{
+    grid-area: as;
+}
+aside img{
+    width: 300px;
+    border-radius: 8px;
+}
+article{
+    grid-area: ar;
+    background-color: #f7f0e5;
+    border-radius: 8px;
+    text-align: justify;
+    margin: 20px;
+    padding: 20px;
+}
+footer{
+    grid-area: f;
+    text-align: center;
+    background-color: #ddead8;
+    border-radius: 8px;
+    padding: 10px;
+}
+#main-container{
+    grid-area: mc;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+.project-card{
+    background-color: #f8f4eb;
+    padding: 30px;
+    border-radius: 8px;
+    height: 200px;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    margin-bottom: 15px;
+}
+.card a{
+    display: inline-block;
+    margin-top: 15px;
+    color: #bf9276;
+    text-decoration: none;
+    font-weight: bold;
+}
