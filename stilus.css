@@ -74,3 +74,24 @@ footer{
     transform: translateY(-5px);
     transition: transform 0.3s ease;
 }
+
+@media screen and (max-width: 700px){
+    main{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h"
+        "n"
+        "gr"
+        "f";
+    }
+    nav{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    #grid-container{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+}

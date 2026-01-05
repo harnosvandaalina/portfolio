@@ -92,3 +92,26 @@ footer{
     text-decoration: none;
     font-weight: bold;
 }
+@media screen and (max-width: 700px){
+    main{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h"
+        "n"
+        "as"
+        "ar"
+        "mc"
+        "f";
+    }
+    nav{
+        display: grid;
+        grid-template-columns: 1fr ;
+
+    }
+    #main-container{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+}
